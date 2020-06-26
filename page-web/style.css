@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* GENERAL */
+
+body {
+	color: #EBEBEA;
+	margin: 0;
+	line-height: 1.5em;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+
+	--first-color: #463F3A;
+	--second-color: #8A817C;
+	--third-color: #BCB8B1;
+	--forth-color: #F4F3EE;
+	--fifth-color: #E0AFA0;
+
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+h1 {
+	color: var(--first-color);
+	font-family: 'Playfair Display', serif;
+	font-weight: 500;
+	font-size: 2.5em;
+	text-align: center;
+	font-style: italic;
+	letter-spacing: 2px;
+
+}
+
+h2 {
+	color: var(--forth-color);
+	background-color: var(--first-color);
+	font-family: 'Vidaloka', serif;
+	font-weight: 600;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px 0;
+	margin: 15px 0;
+}
+
+p {
+	text-align: justify;
+	font-size: 0.9em;
+	line-height: 2em;
+	padding: 0 50px;
+}
+
+main a {
+	color: var(--first-color);
+	font-weight: 600;
+}
+
+main a:hover {
+	color: var(--first-color);
+	font-weight: 600;
+	text-decoration-color: var(--first-color);
+}
+
+/* NAVIGATION */
+
+nav {
+	background: var(--first-color);
+	min-height: 70px;
+	display: flex;
+	justify-content: center;
+
+}
+
+#links {
+	background: var(--first-color);
+	min-height: 70px;
+	max-width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+nav a {
+	margin: 0 15px;
+	color: var(--fifth-color);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+/* links */
+.nav-button {
+	position: relative;
+	color: var(--fifth-color);
+	border-radius: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.nav-button:hover {
+	color: var(--forth-color);
+	text-decoration: none;
+}
+
+.nav-button::after {
+	position: absolute;
+	content: '';
+	height: 2px;
+	bottom: -4px;
+
+	/* center - (optional) use with adjusting width   */
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 50%;
+	background: var(--third-color);
+
+	/* optional animation */
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+/* optional hover classes used with anmiation */
+
+.nav-button:hover:after {
+	width: 80%;
+	background: var(--fifth-color);
+}
+
+
+/* HEADER */
+
+header {
+	padding: 50px 20%;
+	background: var(--second-color);
+}
+
+#picture {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#picture img {
+	max-width: 500px;
+	border-radius: 5px;
+}
+
+#ma-formation {
+	text-align: center;
+}
+
+.button {
+	position: relative;
+	color: var(--fifth-color);
+	border-radius: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.button:hover {
+	color: var(--forth-color);
+	text-decoration: none;
+}
+
+.button::after {
+	position: absolute;
+	content: '';
+	height: 2px;
+	bottom: -4px;
+
+	/* center - (optional) use with adjusting width   */
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 50%;
+	background: var(--first-color);
+
+	/* optional animation */
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+/* optional hover classes used with anmiation */
+
+.button:hover:after {
+	width: 80%;
+	background: var(--fifth-color);
+}
+
+/* CONTENT */
+
+main {
+	background: var(--third-color);
+	padding: 50px 20%;
+}
+
+main p {
+	color: var(--first-color);
+	font-weight: 500;
+	text-indent: 50px;
+	padding: 5px 50px;
+}
+
+#mon-cv {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+main .button {
+	color: var(--first-color);
+}
+
+main .button:hover {
+	color: var(--forth-color);
+}
+
+main .button::after {
+	background: var(--forth-color);
+}
+
+main .button:hover::after {
+	background: var(--first-color);
+}
+
+
+/* FOOTER */
+
+footer {
+	color: var(--first-color);
+	background: var(--forth-color);
+	padding: 50px 20%;
+
+}
+
+footer .row {
+	width: 75%;
+	margin: 0 auto;
+}
+
+footer p {
+	text-align: center;
+}
+
+footer a {
+	color: var(--fifth-color);
+	font-weight: 600;
+}
+
+footer a:hover {
+	color: var(--fifth-color);
+	font-weight: 600;
+	text-decoration-color: var(--fifth-color);
+}
+
+footer img {
+	max-width: 25px;
+	margin: 10px 10px;
+}
